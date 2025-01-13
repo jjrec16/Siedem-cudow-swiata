@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Siedem cudów świata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-body">
+    <header> <h2>Siedem cudów świata...</h2></header>
+    <nav>
+       
+
+          <div class=menu>       
+            <ul class="menuItems">
+            <li><a href='historia.html' data-item='historia' class="menu">Historia</a></li>
+            <li><a href='quiz.html' data-item='quiz' class="menu">Sprawdź siebie</a></li>
+            <li><a href='index.html' data-item='Home' class="menu">Home</a></li>
+            <li><a href='galeria.html' data-item='galeria' class="menu">Galeria </a></li></ul></div>
+        </nav>
+        
+        <div class="hamburger-container">
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+          </div>
+          
+          <div class="off-screen-menu">
+            <ul>
+              <li><a href='historia.html' data-item='historia'>Dlaczego 7 cudów?</a></li>
+              <li><a href='quiz.html' data-item='quiz'>Sprawdź siebie</a></li>
+              <li><a href='index.html' data-item='Home'>Home</a></li>
+              <li><a href='galeria.html' data-item='galeria'>Galeria </a></li>
+
+            </ul>
+          </div>
+          
+    <main class="quiz-container">
+        <h1 class="quiz-title">Quiz: Siedem cudów świata</h1>
+        <form id="quiz-form" class="quiz-form" action="mailto:imie.nazwisko@tm1.edu.pl" method="post">
+            <!-- Pytanie 1 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">1. Który cud świata starożytnego przetrwał do dzisiaj?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q1" value="Wielka Piramida w Gizie" id="q1-a" class="quiz-input">
+                    <label for="q1-a" class="quiz-label">Wielka Piramida w Gizie</label><br>
+                    <input type="radio" name="q1" value="Latarnia morska w Faros" id="q1-b" class="quiz-input">
+                    <label for="q1-b" class="quiz-label">Latarnia morska w Faros</label><br>
+                    <input type="radio" name="q1" value="Wiszące Ogrody Semiramidy" id="q1-c" class="quiz-input">
+                    <label for="q1-c" class="quiz-label">Wiszące Ogrody Semiramidy</label><br>
+                </div>
+            </section>
+            <!-- Pytanie 2 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">2. W jakim kraju znajdowała się Świątynia Artemidy?</h3>
+                <select name="q2" id="q2" class="quiz-select">
+                    <option value="Egipt">Egipt</option>
+                    <option value="Turcja">Turcja</option>
+                    <option value="Grecja">Grecja</option>
+                </select>
+            </section>
+            <!-- Pytanie 3 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">3. Kto stworzył listę siedmiu cudów świata starożytnego?</h3>
+                <input type="text" name="q3" class="quiz-text" placeholder="Wpisz odpowiedź">
+            </section>
+            <!-- Pytanie 4 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">4. Zaznacz budowle, które zostały zniszczone przez trzęsienia ziemi:</h3>
+                <div class="quiz-options">
+                    <input type="checkbox" name="q4" value="Latarnia morska w Faros" id="q4-a" class="quiz-input">
+                    <label for="q4-a" class="quiz-label">Latarnia morska w Faros</label><br>
+                    <input type="checkbox" name="q4" value="Kolos Rodyjski" id="q4-b" class="quiz-input">
+                    <label for="q4-b" class="quiz-label">Kolos Rodyjski</label><br>
+                    <input type="checkbox" name="q4" value="Wielka Piramida w Gizie" id="q4-c" class="quiz-input">
+                    <label for="q4-c" class="quiz-label">Wielka Piramida w Gizie</label><br>
+                </div>
+            </section>
+            <!-- Pytanie 5 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">5. W którym roku odbyło się głosowanie na współczesne cuda świata?</h3>
+                <input type="number" name="q5" class="quiz-number" placeholder="Podaj rok">
+            </section>
+            <!-- Pytanie 6 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">6. Jakie cechy były kluczowe w wyborze cudów starożytnego świata?</h3>
+                <textarea name="q6" rows="3" class="quiz-textarea" placeholder="Wpisz odpowiedź"></textarea>
+            </section>
+            <!-- Pytanie 7 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">7. Który cud świata został wzniesiony w Aleksandrii?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q7" value="Latarnia morska w Faros" id="q7-a" class="quiz-input">
+                    <label for="q7-a" class="quiz-label">Latarnia morska w Faros</label><br>
+                    <input type="radio" name="q7" value="Posąg Zeusa w Olimpii" id="q7-b" class="quiz-input">
+                    <label for="q7-b" class="quiz-label">Posąg Zeusa w Olimpii</label><br>
+                    <input type="radio" name="q7" value="Świątynia Artemidy" id="q7-c" class="quiz-input">
+                    <label for="q7-c" class="quiz-label">Świątynia Artemidy</label><br>
+                </div>
+            </section>
+            <!-- Pytanie 8 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">8. Jaką funkcję pełniła Latarnia morska w Faros?</h3>
+                <input type="text" name="q8" class="quiz-text" placeholder="Wpisz odpowiedź">
+            </section>
+            <!-- Pytanie 9 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">9. Gdzie znajdowało się Mauzoleum w Halikarnasie?</h3>
+                <div class="quiz-options">
+                    <input type="radio" name="q9" value="Halikarnas (Turcja)" id="q9-a" class="quiz-input">
+                    <label for="q9-a" class="quiz-label">Halikarnas (Turcja)</label><br>
+                    <input type="radio" name="q9" value="Babilon (Irak)" id="q9-b" class="quiz-input">
+                    <label for="q9-b" class="quiz-label">Babilon (Irak)</label><br>
+                    <input type="radio" name="q9" value="Rodos (Grecja)" id="q9-c" class="quiz-input">
+                    <label for="q9-c" class="quiz-label">Rodos (Grecja)</label><br>
+                </div>
+            </section>
+            <!-- Pytanie 10 -->
+            <section class="quiz-section">
+                <h3 class="quiz-question">10. Podaj jedno znaczenie kulturowe cudów świata.</h3>
+                <textarea name="q10" rows="3" class="quiz-textarea" placeholder="Wpisz odpowiedź"></textarea>
+            </section>
+            <div class="quiz-buttons"> 
+                <button type="button" id="submit-btn" class="quiz-button">Sprawdź wyniki</button>
+                <button type="submit" i class="quiz-button">Wyślij</button>
+                <button type="reset" id="reset-btn" class="quiz-button quiz-button-reset">Wyczyść</button>
+            </div>
+        </form>
+        <div id="result" class="quiz-result"></div>
+    </main>
+    <footer class="ind"> Yaraslau Yarats, 2Tc</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

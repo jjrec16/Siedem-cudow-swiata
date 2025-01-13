@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <h2>Siedem cudów świata...</h2></header>
+    <nav>
+       
+
+      <div class=menu>       
+        <ul class="menuItems">
+        <li><a href='historia.html' data-item='historia' class="menu">Historia</a></li>
+        <li><a href='quiz.html' data-item='quiz' class="menu">Sprawdź siebie</a></li>
+        <li><a href='index.html' data-item='Home' class="menu">Home</a></li>
+        <li><a href='galeria.html' data-item='galeria' class="menu">Galeria </a></li></ul></div>
+    </nav>
+    
+    <div class="hamburger-container">
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+      </div>
+      
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href='historia.html' data-item='historia'>Dlaczego 7 cudów?</a></li>
+          <li><a href='quiz.html' data-item='quiz'>Sprawdź siebie</a></li>
+          <li><a href='index.html' data-item='Home'>Home</a></li>
+          <li><a href='galeria.html' data-item='galeria'>Galeria </a></li>
+
+        </ul>
+      </div>
+
+<section class="gallery">
+    <h1 class="naglowek-atrakcji">Galeria zdjęć miasta</h1>
+    <div class="thumbnails">
+        <img src="foto/Kolos_Rodyjski.png" alt="Kolos Rodyjski" onclick="showImage(this)">
+        <img src="foto/Latarnia_morska_na_Faros.jfif" alt="Latarnia morska na Faros" onclick="showImage(this)">
+        <img src="foto/Mauzoleum_w_Halikarnasie.jfif" alt="Mauzoleum w Halikarnasie" onclick="showImage(this)">
+        <img src="foto/Piramida_Cheopsa.jpg" alt="Piramida Cheopsa" onclick="showImage(this)">
+        <img src="foto/Posąg_Zeusa_w_Olimpii.jfif" alt="Posąg Zeusa w Olimpii" onclick="showImage(this)">
+        <img src="foto/Wiszące_ogrody_Semiramidy.jfif" alt="Wiszące ogrody Semiramidy" onclick="showImage(this)">
+        <img src="foto/Świątynia_Artemidy_w_Efezie.jfif" alt="Świątynia Artemidy w Efezie" onclick="showImage(this)">
+    </div>
+    <div class="full-image-container" id="fullImageContainer">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage" src="" alt="Pełne zdjęcie">
+    </div>
+</section>
+<footer class="ind">Yaraslau Yarats, 2Tc</footer>
+<script src="script.js"></script>
+</body>
+</html>
