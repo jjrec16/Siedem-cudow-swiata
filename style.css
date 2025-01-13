@@ -17,9 +17,9 @@ background-color: rgb(174, 204, 248)
     }
 
  header{
-    display: flex;
-    border: solid 1px #333 ;
-    justify-content: center;
+
+    border: solid 1px #333;
+	text-align:center;
     background-color: #6ca0ca;
     animation-name: obrot;
     animation-duration: 1s;
