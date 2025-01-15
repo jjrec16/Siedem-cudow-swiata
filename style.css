@@ -503,9 +503,9 @@ a.menu:hover {
     font-weight: 500;
     border-bottom: 1px solid #2109f8;
 }
-
+  }}
   
-}
+
 @media (max-width: 600px) {
   .hamburger-container {
     display: flex;
@@ -550,7 +550,4 @@ a.menu:hover {
   }
   .block a:hover {
     background-color: #555;
-  }
-
-  
-}
+  }}
