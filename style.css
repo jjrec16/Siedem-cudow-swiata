@@ -17,9 +17,9 @@ background-color: rgb(174, 204, 248)
     }
 
  header{
-
-    border: solid 1px #333;
-	text-align:center;
+    display: flex;
+    border: solid 1px #333 ;
+    justify-content: center;
     background-color: #6ca0ca;
     animation-name: obrot;
     animation-duration: 1s;
@@ -466,35 +466,42 @@ td{
   .block a:hover {
     background-color: #555;
   }
-  .menuItems {
+  
+  
+  
+  @media(max-width: 1200px) {
+ 
+.menuItems {
     list-style: none;
     display: flex;
-    
-  }
+    flex-wrap: wrap;
+    gap: 1vh;
+    justify-content: center;
+}
 
-    li {
-      margin: 15px;
-    }
+li {
+    margin: 1vh;
+    flex: 1 0 45%; /* Dostosowanie szerokości elementów, aby menu podzieliło się na dwa wiersze */
+}
 
-    a.menu
-      {
-        text-decoration: none;
-        color: #c5c5c5;
-        font-size: 2vh;
-        font-weight: 300;
-        transition: all 0.5s ease-in-out;
-        position: relative;
-        text-transform: uppercase;
-      }
-      a.menu:hover{
-  text-decoration: none;
-  color: #2109f8;
-  font-size: 3vh;
-  font-weight: 300;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
+a.menu {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5vh;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    padding: 1vh;
+    border-bottom: 1px solid transparent;
+}
+
+a.menu:hover {
+    text-decoration: none;
+    color: #2109f8;
+    font-size: 2.7vh;
+    font-weight: 500;
+    border-bottom: 1px solid #2109f8;
 }
 
   
